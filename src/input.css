@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-brand-peach: rgb(230, 171, 157);
+  
+  --color-brand-black: #050505;
+}
