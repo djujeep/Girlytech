@@ -4,21 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peace Eluwa | Front-End Engineer & VA</title>
-    <link rel="stylesheet" href="output.css"
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="src/output.css" />
+
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "brand-black": "#050505",
-              "brand-peach": "#E6AB9D",
-            },
-          },
-        },
-      };
-    </script>
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&display=swap");
       body {
@@ -31,7 +21,7 @@
       }
     </style>
   </head>
- <body
+  <body
     class="bg-brand-black text-white selection:bg-brand-peach selection:text-brand-black"
   >
     <nav
@@ -50,8 +40,8 @@
             >girly<span class="text-brand-peach">tech</span></span
           >
         </div>
-
-</nav>
+      </div>
+    </nav>
 
     <header
       class="min-h-screen pt-32 pb-20 px-6 md:px-16 relative flex items-center overflow-hidden"
@@ -65,80 +55,138 @@
           background-size: 40px 40px;
         "
       ></div>
-<div
+      <div
         class="max-w-[95%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10"
       >
         <div>
-          <h2 class="text-xl md:text-5xl font-black leading-[1.1] uppercase mb-8">
-                Front-End <span class="text-brand-peach italic">Engineer</span> <br class="hidden md:block"/> 
-                & Virtual <span class="text-brand-peach italic">Assistant</span>
-            </h2>
-            <p class="text-gray-400 text-xs max-w-xl mb-10 leading-relxed border-l-2 border-brand-peach/30 pl-6">
-              I offer a unique and dual-threat skillset: the technical hands to build your digital products and the administrative mind to manage your business growth. From developing modern user interfaces to overseeing complex social media management and data handling. I provide the end-to-end support that modern brands need to thrive in a fast-paced digital landscape.
-            </p>
-            <div class="flex flex-wrap gap-6">
-              <button class="group relative px-8 py-2 bg-brand-peach text-brand-black font-black rounded-full transition-all duration-300 shadow-lg shadow-brand-peach/30 hover:bg-brand-black hover:text-brand-peach hover:border-brand-peach border-2 border-transparent">Let's Talk</button>
-              <a href="#projects" class="flex items-center gap-3 font-bold group">Projects <i data-lucide="arrow-up-right" class="group hover:translate-x-1 group-hover:translate-y-1 transition-all"></i></a>
-            </div>
-            </div>
-            <div class="relative justify-self-center lg:justify-self-end">
-              <div class="absolute -top-10 -left-10 bg-white text-black px-6 py-3 rounded-2xl rounded-bi-none font-black shadow-2xl z-20">
-                Hi, I'm Peace 👋
-              </div>
-              <div class="absolute bottom-10 -right-10 glossy-card px-4 py-2 rounded-2xl flex items-center gap-3 z-20">
-                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                <span class="text-xs font-bold uppercase tracking-widest">Girlytech</span>
-              </div>
-              <div class="w-72 md:w-90 aspect-square bg-brand-peach rounded-[4em] overflow-hidden rotate-3 hover:rotate-0 transition-all duration-700 border-8 border-white/5">
-                <img src="img/IbeEbube-8642.jpg" alt="Eluwa Peace" class="w-[450px] h-full object-cover -rotate-3 scale-110 hover:grayscale grayscale-0 transition-all">
-              </div>
-            </div>
+          <h2
+            class="text-xl md:text-5xl font-black leading-[1.1] uppercase mb-8"
+          >
+            Front-End <span class="text-brand-peach italic">Engineer</span>
+            <br class="hidden md:block" />
+            & Virtual <span class="text-brand-peach italic">Assistant</span>
+          </h2>
+          <p
+            class="text-gray-400 text-xs max-w-xl mb-10 leading-relaxed border-l-2 border-brand-peach/30 pl-6"
+          >
+            I offer a unique and dual-threat skillset: the technical hands to
+            build your digital products and the administrative mind to manage
+            your business growth. From developing modern user interfaces to
+            overseeing complex social media management and data handling. I
+            provide the end-to-end support that modern brands need to thrive in
+            a fast-paced digital landscape.
+          </p>
+          <div class="flex flex-wrap gap-6">
+            <button
+              class="group relative px-8 py-2 bg-brand-peach text-brand-black font-black rounded-full transition-all duration-300 shadow-lg shadow-brand-peach/30 hover:bg-brand-black hover:text-brand-peach hover:border-brand-peach border-2 border-transparent"
+            >
+              Let's Talk
+            </button>
+            <a href="#projects" class="flex items-center gap-3 font-bold group"
+              >Projects
+              <i
+                data-lucide="arrow-up-right"
+                class="group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"
+              ></i
+            ></a>
           </div>
+        </div>
+        <div class="relative justify-self-center lg:justify-self-end">
+          <div
+            class="absolute -top-10 -left-10 bg-white text-black px-6 py-3 rounded-2xl rounded-bl-none font-black shadow-2xl z-20"
+          >
+            Hi, I'm Peace 👋
+          </div>
+          <div
+            class="absolute bottom-10 -right-10 glossy-card px-4 py-2 rounded-2xl flex items-center gap-3 z-20"
+          >
+            <span
+              class="w-2 h-2 bg-green-500 rounded-full animate-pulse"
+            ></span>
+            <span class="text-xs font-bold uppercase tracking-widest"
+              >Girlytech</span
+            >
+          </div>
+          <div
+            class="w-72 md:w-90 aspect-square bg-brand-peach rounded-[4em] overflow-hidden rotate-3 hover:rotate-0 transition-all duration-700 border-8 border-white/5"
+          >
+            <img
+              src="src/img/IbeEbube-8642.jpg"
+              alt="Eluwa Peace"
+              class="w-full h-full object-cover -rotate-3 scale-110 hover:grayscale grayscale-0 transition-all"
+            />
+          </div>
+        </div>
+      </div>
     </header>
-    <footer class="relative bg-[#0d0d0d] pb-12 px-6 overflow-hidden border rounded-t-2xl border-brand-peach/30 shadow-[0_0_15px_rgba(230,171,157,0.5)]">
-      <div class="absolute -bottom-24 left-1/2 -translate-x-1/2 w-full max-w-4xl h-64  blur-[120px] pointer-events-none"></div>
+
+    <footer
+      class="relative bg-[#0d0d0d] pb-12 px-6 overflow-hidden border rounded-t-2xl border-brand-peach/30 shadow-[0_0_15px_rgba(230,171,157,0.5)]"
+    >
       <div class="max-w-[95%] mx-auto relative z-10">
-        <div class="flex flex-col border-b border-white/5 lg:flex-row justify-between gap-4">
-        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center pt-10 gap-12 mb-20">
-          <div class="space-y-5">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 bg-brand-peach rounded-2xl rotate-12 flex items-center justify-center shadow-[0_0_15px_rgba(230,171,157,0.5)]">
-                <span class="text-brand-black font-black -rotate-12 text-sm">GT</span>
+        <div
+          class="flex flex-col border-b border-white/5 lg:flex-row justify-between gap-4"
+        >
+          <div
+            class="flex flex-col lg:flex-row justify-between items-start lg:items-center pt-10 gap-12 mb-20"
+          >
+            <div class="space-y-5">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 bg-brand-peach rounded-2xl rotate-12 flex items-center justify-center shadow-[0_0_15px_rgba(230,171,157,0.5)]"
+                >
+                  <span class="text-brand-black font-black -rotate-12 text-sm"
+                    >GT</span
+                  >
+                </div>
+                <span class="text-xl font-black tracking-tighter"
+                  >girly<span class="text-brand-peach">tech</span></span
+                >
               </div>
-              <span class="text-xl font-black tracking-tighter">girly<span class="text-brand-peach">tech</span></span>
+              <p class="text-gray-400 max-w-md text-base leading-relaxed">
+                Engineering seamless digital experiences. Based in Nigeria
+              </p>
             </div>
-            <p class="text-gray-400 max-w-md text-base leading-relaxed">Engineering seamless digital experiences. Based in Nigeria</p>
           </div>
-
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pt-10 pb-20">
-          <div class="space-y-6">
-            <h4 class="text-brand-peach text-xs font-bold uppercase tracking-[0.3em]">
-               Quick Links
-            </h4>
-            <ul class="space-y-4 text-gray-400 text-sm font-medium">
-              <li>
-                <a href="#" class="hover:text-brand-peach transition-all underline decoration-transparent hover:decoration-brand-peach underline-offset-4">Home</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-brand-peach transition-all underline decoration-transparent hover:decoration-brand-peach underline-offset-4">Projects</a>
-              </li>
-
-            </ul>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pt-10 pb-20"
+          >
+            <div class="space-y-6">
+              <h4
+                class="text-brand-peach text-xs font-bold uppercase tracking-[0.3em]"
+              >
+                Quick Links
+              </h4>
+              <ul class="space-y-4 text-gray-400 text-sm font-medium">
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-brand-peach transition-all underline decoration-transparent hover:decoration-brand-peach underline-offset-4"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:text-brand-peach transition-all underline decoration-transparent hover:decoration-brand-peach underline-offset-4"
+                    >Projects</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        </div>
-        <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-600 text-[10px] font-bold uppercase tracking-widest">
+        <div
+          class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-600 text-[10px] font-bold uppercase tracking-widest"
+        >
           <p>&copy; 2026 Girlytech</p>
           <p>Front-End Engineer and Virtual Assistant</p>
         </div>
       </div>
     </footer>
+
     <script>
       lucide.createIcons();
-      const btn = document.getElementById("menu-btn");
-      const menu = document.getElementById("mobile-menu");
-      btn.onclick = () => menu.classList.toggle("hidden");
     </script>
   </body>
 </html>
