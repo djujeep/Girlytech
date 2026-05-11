@@ -674,6 +674,13 @@
       }
     }
   }
+  .hover\:underline {
+    &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+  }
   .hover\:grayscale {
     &:hover {
       @media (hover: hover) {
