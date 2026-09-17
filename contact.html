@@ -1,46 +1,70 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Let's get in Touch | Eluwa Peace</title>
+    <meta name="description" content="Get in touch with Eluwa Peace — Front-End Engineer and Virtual Assistant based in Nigeria, open to remote roles worldwide." />
+    <meta name="theme-color" content="#050505" />
     <link rel="stylesheet" href="src/output.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap");
+      body {
+        font-family: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+      }
+      .glossy-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.05),
+          0 20px 40px -24px rgba(0, 0, 0, 0.7);
+      }
+    </style>
   </head>
   <body
-    class="bg-[#050505] text-white select:bg-[#E6AB9D] select:text-[#050505]"
+    class="bg-[#050505] text-white selection:bg-[#E6AB9D] selection:text-[#050505]"
   >
     <nav
       class="fixed top-0 left-0 w-full z-50 bg-[#050505]/90 backdrop-blur-lg border-b border-white/5 px-4 md:px-10 py-3"
     >
       <div class="max-w-[95%] mx-auto flex items-center justify-between">
-        <div class="flex items-center gap-3">
+        <a href="index.html" class="flex items-center gap-3">
           <div
             class="w-10 h-10 bg-[#E6AB9D] rounded-lg rotate-12 flex items-center justify-center shadow-[0_0_15px_rgba(230,171,157,0.5)] flex-shrink-0"
           >
-          <a href="index.html">
             <span class="text-[#050505] font-black -rotate-12 text-sm">GT</span>
           </div>
           <span class="text-xl font-black tracking-tighter whitespace-nowrap">
             girly<span class="text-[#E6AB9D]">tech</span>
           </span>
-          </a>
+        </a>
+
+        <div class="hidden md:flex items-center gap-10 text-xs font-bold uppercase tracking-wide">
+          <a href="index.html" class="hover:text-[#E6AB9D] transition-colors">Home</a>
+          <a href="project.html" class="hover:text-[#E6AB9D] transition-colors">Projects</a>
+          <a href="contact.html" class="text-[#E6AB9D]">Contact</a>
         </div>
-        <div class="flex items-center">
-          <a
-            href="index.html"
-            class="group flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] hover:text-[#E6AB9D] transition-colors"
-          >
-            <span class="sm:inline text-gray-500 font-medium mr-1"
-              >BACK TO</span
-            >
-            HOME
-            <i
-              class="fa-solid fa-arrow-left text-sm group-hover:translate-x-1 transition-transform"
-            ></i>
-          </a>
-        </div>
+
+        <button
+          id="menuButton"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          class="md:hidden w-9 h-9 flex items-center justify-center text-lg"
+        >
+          <i id="menuIcon" class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <div id="mobileMenu" class="hidden md:hidden flex-col gap-1 mt-3 pb-2 text-sm font-bold uppercase tracking-widest">
+        <a href="index.html" class="px-2 py-3 hover:text-[#E6AB9D] transition-colors">Home</a>
+        <a href="project.html" class="px-2 py-3 hover:text-[#E6AB9D] transition-colors">Projects</a>
+        <a href="contact.html" class="px-2 py-3 text-[#E6AB9D]">Contact</a>
       </div>
     </nav>
     <main
@@ -158,15 +182,15 @@
           class="bg-white/[0.02] border border-white/5 rounded-[2rem] p-10 md:p-12 relative overflow-hidden"
         >
           <h4
-            class="text-xs font-bold uppercase tracking-[0.3em] text-[#e6ab9d] mb-6"
+            class="text-sm font-medium text-[#e6ab9d] mb-6"
           >
-            Current Availability
+            // current availability
           </h4>
           <p class="text-gray-300 leading-relaxed mb-8">
             I am currently based in
             <span class="text-white font-medium">Nigeria (GMT+1)</span> and
             available for remote work worldwide. I typically respond within
-            24seconds
+            24 hours.
           </p>
           <div
             class="flex items-center gap-3 text-sm font-bold uppercase tracking-tighter"
@@ -190,11 +214,10 @@
             class="flex flex-col lg:flex-row justify-between items-start lg:items-center pt-10 gap-12 mb-20"
           >
             <div class="space-y-5">
-              <div class="flex items-center gap-3">
+              <a href="index.html" class="flex items-center gap-3">
                 <div
-                  class="w-10 h-10 bg-[#E6AB9D] rounded-2xl rotate-12 flex items-center justify-center shadow-[0_0_15px_rgba(230,171,157,0.5)]"
+                  class="w-10 h-10 bg-[#E6AB9D] rounded-2xl rotate-12 flex items-center justify-center shadow-[0_0_15px_rgba(230,171,157,0.5)] flex-shrink-0"
                 >
-                <a href="#">
                   <span class="text-[#050505] font-black -rotate-12 text-sm"
                     >GT</span
                   >
@@ -202,8 +225,7 @@
                 <span class="text-xl font-black tracking-tighter"
                   >girly<span class="text-[#E6AB9D]">tech</span></span
                 >
-                </a>
-              </div>
+              </a>
               <p class="text-gray-400 max-w-md text-base leading-relaxed">
                 Engineering seamless digital experiences. Based in Nigeria
               </p>
@@ -214,9 +236,9 @@
           >
             <div class="space-y-6">
               <h4
-                class="text-[#E6AB9D] text-xs font-bold uppercase tracking-[0.3em]"
+                class="text-[#E6AB9D] text-sm font-medium"
               >
-                Quick Links
+                // quick links
               </h4>
               <ul class="space-y-4 text-gray-400 text-sm font-medium">
                 <li>
@@ -252,5 +274,19 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const menuIcon = document.getElementById("menuIcon");
+
+      menuButton.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.contains("flex");
+        mobileMenu.classList.toggle("hidden", isOpen);
+        mobileMenu.classList.toggle("flex", !isOpen);
+        menuIcon.className = isOpen ? "fa-solid fa-bars" : "fa-solid fa-xmark";
+        menuButton.setAttribute("aria-expanded", String(!isOpen));
+      });
+    </script>
   </body>
 </html>
