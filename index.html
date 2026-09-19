@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eluwa Peace | Front-End Engineer & Virtual Assistant</title>
-    <meta name="description" content="Eluwa Peace (Girlytech) — Front-End Engineer and Virtual Assistant based in Nigeria. HTML5, CSS3, JavaScript, React and Tailwind CSS builds, plus remote administrative and social media support." />
+    <title>Eluwa Peace | Front-End Engineer</title>
+    <meta name="description" content="Eluwa Peace (Girlytech) — Front-End Engineer based in Nigeria. Building responsive interfaces with HTML5, CSS3, JavaScript, React and Tailwind CSS." />
     <meta name="theme-color" content="#050505" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Eluwa Peace | Front-End Engineer & Virtual Assistant" />
-    <meta property="og:description" content="Front-End Engineer and Virtual Assistant based in Nigeria. See my projects and technical stack." />
+    <meta property="og:title" content="Eluwa Peace | Front-End Engineer" />
+    <meta property="og:description" content="Front-End Engineer based in Nigeria. See my projects and technical stack." />
     <meta property="og:image" content="src/img/IbeEbube-8642.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -30,6 +30,15 @@
         box-shadow:
           inset 0 1px 0 rgba(255, 255, 255, 0.05),
           0 20px 40px -24px rgba(0, 0, 0, 0.7);
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition: opacity 0.7s cubic-bezier(.16,.84,.44,1), transform 0.7s cubic-bezier(.16,.84,.44,1);
+      }
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
       }
     </style>
   </head>
@@ -90,7 +99,8 @@
       <div
         class="max-w-[95%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10"
       >
-        <div>
+        <div class="reveal">
+          <p class="text-sm font-medium text-[#E6AB9D] mb-4">// hello world</p>
           <h1
             class="text-3xl md:text-5xl font-black leading-[1.1] uppercase mb-8"
           >
@@ -99,9 +109,8 @@
           <p
             class="text-gray-400 text-sm max-w-xl mb-10 leading-relaxed border-l-2 border-[#E6AB9D]/30 pl-6"
           >
-            I offer a unique and dual-threat skillset: the technical hands to
-            build your digital products and the administrative mind to manage
-            your business growth.
+            I design and build responsive, accessible interfaces — turning
+            designs into fast, reliable front-ends with clean, maintainable code.
           </p>
           <div class="flex flex-wrap gap-6">
             <a href="project.html" class="flex items-center gap-3 font-bold group">
@@ -115,7 +124,7 @@
             </a>
           </div>
         </div>
-        <div class="relative justify-self-center lg:justify-self-end">
+        <div class="reveal relative justify-self-center lg:justify-self-end" style="transition-delay: 150ms">
           <div
             class="absolute -top-10 -left-10 bg-white text-[#050505] rounded-2xl rounded-bl-none shadow-2xl z-20 overflow-hidden w-48"
           >
@@ -143,7 +152,7 @@
             class="w-72 md:w-90 aspect-square bg-[#E6AB9D] rounded-[4em] overflow-hidden rotate-3 hover:rotate-0 transition-all duration-700 border-8 border-white/5"
           >
             <img
-              src="src/img/IbeEbube-8642.jpg"
+              src="src/img/WhatsApp Image 2026-09-19 at 7.26.02 PM (1).jpeg"
               alt="Eluwa Peace"
               class="w-full h-full object-cover -rotate-3 scale-110 hover:grayscale grayscale-0 transition-all"
             />
@@ -154,10 +163,12 @@
 
     <section class="px-6 md:px-16 py-24 max-w-7xl mx-auto border-t border-white/5">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-        <div>
+        <div class="reveal">
           <h2 class="text-sm font-medium text-[#E6AB9D] mb-6">// about</h2>
           <p class="text-gray-300 leading-relaxed mb-6">
-            I'm Eluwa Peace, a front-end engineer. I build responsive interfaces with HTML5, CSS3, JavaScript and, styled with Tailwind CSS or Bootstrap depending on the project.
+            I'm Eluwa Peace, a front-end engineer based in Nigeria. I build
+            responsive interfaces with HTML5, CSS3, JavaScript and React,
+            styled with Tailwind CSS or Bootstrap depending on the project.
           </p>
           <p class="text-gray-400 leading-relaxed">I'm currently based in
             <span class="text-white font-medium">Nigeria (GMT+1)</span> and open to remote roles
@@ -166,31 +177,30 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="glossy-card rounded-2xl p-6">
+          <div class="reveal glossy-card rounded-2xl p-6">
             <i class="fa-solid fa-code text-[#E6AB9D] text-lg mb-4"></i>
             <h3 class="font-bold text-sm uppercase tracking-wider mb-2">Front-End Development</h3>
             <p class="text-gray-400 text-xs leading-relaxed">Responsive, accessible interfaces built with HTML5, CSS3, JavaScript and React.</p>
           </div>
-          <div class="glossy-card rounded-2xl p-6">
-            <i class="fa-solid fa-user-tie text-[#E6AB9D] text-lg mb-4"></i>
-            <h3 class="font-bold text-sm uppercase tracking-wider mb-2">Virtual Assistance</h3>
-            <p class="text-gray-400 text-xs leading-relaxed">Inbox and calendar management, social media, content support and customer service.</p>
+          <div class="reveal glossy-card rounded-2xl p-6" style="transition-delay: 100ms">
+            <i class="fa-solid fa-mobile-screen-button text-[#E6AB9D] text-lg mb-4"></i>
+            <h3 class="font-bold text-sm uppercase tracking-wider mb-2">Responsive Design</h3>
+            <p class="text-gray-400 text-xs leading-relaxed">Layouts that adapt cleanly across breakpoints, tested across real devices and screen sizes.</p>
           </div>
-          <div class="glossy-card rounded-2xl p-6 sm:col-span-2">
-            <i class="fa-solid fa-bolt text-[#E6AB9D] text-lg mb-4"></i>
-            <h3 class="font-bold text-sm uppercase tracking-wider mb-2">AI-Enhanced Workflow</h3>
-            <p class="text-gray-400 text-xs leading-relaxed">Using AI tools for market research, caption drafting and message writing to work faster without cutting corners.</p>
+          <div class="reveal glossy-card rounded-2xl p-6 sm:col-span-2" style="transition-delay: 200ms">
+            <i class="fa-solid fa-code-branch text-[#E6AB9D] text-lg mb-4"></i>
+            <h3 class="font-bold text-sm uppercase tracking-wider mb-2">Version-Controlled Workflow</h3>
+            <p class="text-gray-400 text-xs leading-relaxed">Git-based development with a focus on clean commits, readable code and iterative, testable builds.</p>
           </div>
         </div>
       </div>
 
-      <div class="mt-16">
+      <div class="mt-16 reveal">
         <h3 class="text-sm font-medium text-gray-500 mb-6">// technical stack</h3>
         <div class="flex flex-wrap gap-3">
           <span class="px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest bg-white/[0.02]">HTML5</span>
           <span class="px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest bg-white/[0.02]">CSS3</span>
           <span class="px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest bg-white/[0.02]">JavaScript ES6+</span>
-          <span class="px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest bg-white/[0.02]">React</span>
           <span class="px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest bg-white/[0.02]">Tailwind CSS</span>
           <span class="px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest bg-white/[0.02]">Bootstrap</span>
           <span class="px-4 py-2 rounded-full border border-white/10 text-[10px] font-bold uppercase tracking-widest bg-white/[0.02]">Git & GitHub</span>
@@ -201,22 +211,15 @@
     </section>
 
     <section class="py-24 px-6 border-t border-white/5">
-      <div class="max-w-4xl mx-auto">
+      <div class="max-w-4xl mx-auto reveal">
         <h2 class="text-sm font-medium text-gray-600 text-center mb-10">// download my cv</h2>
-        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+        <div class="flex items-center justify-center">
           <a href="src/ELUWA PEACE FRONT-END ENGINEER.pdf" download class="group w-full md:w-auto inline-flex items-center justify-between md:justify-start gap-6 px-8 py-5 bg-white text-[#050505] rounded-2xl font-bold uppercase tracking-widest text-[11px] hover:bg-[#e6ab9d] transition-all duration-500 shadow-xl">
             <div class="flex flex-col items-start">
               <span class="text-[8px] text-gray-500 group-hover:text-[#050505]/60 transition-colors">Developer Profile</span>
               <span>Front-End CV</span>
             </div>
             <i class="fa-solid fa-code text-lg"></i>
-          </a>
-          <a href="src/ELUWA PEACE VA.docx" download class="group w-full md:w-auto inline-flex items-center justify-between md:justify-start gap-6 px-8 py-5 border border-white/10 bg-[#111] text-white rounded-2xl font-bold uppercase tracking-widest text-[11px] hover:border-[#e6ab9d]/50 transition-all duration-500 shadow-xl">
-            <div class="flex flex-col items-start">
-              <span class="text-[8px] text-gray-400 transition-colors">Administrative Profile</span>
-              <span>Virtual Assistant CV</span>
-            </div>
-            <i class="fa-solid fa-user-tie text-lg group-hover:text-[#e6ab9d] transition-colors"></i>
           </a>
         </div>
       </div>
@@ -257,7 +260,7 @@
               <h4
                 class="text-[#E6AB9D] text-sm font-medium"
               >
-                Quick Links
+                // quick links
               </h4>
               <ul class="space-y-4 text-gray-400 text-sm font-medium">
                 <li>
@@ -283,13 +286,34 @@
                 </li>
               </ul>
             </div>
+            <div class="space-y-6">
+              <h4
+                class="text-[#E6AB9D] text-sm font-medium"
+              >
+                // elsewhere
+              </h4>
+              <ul class="space-y-4 text-gray-400 text-sm font-medium">
+                <li>
+                  <a href="mailto:djujeep065@gmail.com" class="hover:text-[#E6AB9D] hover:italic transition-all hover:underline">Email</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/eluwa-peace-esther-721242379" class="hover:text-[#E6AB9D] hover:italic transition-all hover:underline">LinkedIn</a>
+                </li>
+                <li>
+                  <a href="https://wa.link/u569l6" class="hover:text-[#E6AB9D] hover:italic transition-all hover:underline">WhatsApp</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/_girlytech?igsh=YWN3MnpyOWhycTFp" class="hover:text-[#E6AB9D] hover:italic transition-all hover:underline">Instagram</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div
           class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-600 text-[10px] font-bold uppercase tracking-widest"
         >
           <p>&copy; 2026 Girlytech</p>
-          <p>Front-End Engineer and Virtual Assistant</p>
+          <p>Front-End Engineer</p>
         </div>
       </div>
     </footer>
@@ -306,6 +330,20 @@
         menuIcon.className = isOpen ? "fa-solid fa-bars" : "fa-solid fa-xmark";
         menuButton.setAttribute("aria-expanded", String(!isOpen));
       });
+
+      const revealEls = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+      );
+      revealEls.forEach((el) => io.observe(el));
     </script>
   </body>
 </html>
